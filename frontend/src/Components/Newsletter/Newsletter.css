@@ -1,0 +1,133 @@
+.newsletter {
+  width: 65%;
+  /* height: 40vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 100px 140px;
+  margin-bottom: 150px;
+  background-image: linear-gradient(to right bottom, #c6f1fb, #d4f3ff, #e1f5ff, #edf7ff, #f7faff, #f4f6ff, #f2f2ff, #f3edff, #eddffd, #e9d1f9, #e8c2f3, #e8b2ec);
+  gap: 30px;
+}
+
+.newsletter h1 {
+  color: #455454;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.newsletter h3 {
+  font-weight: 400;
+  color: red;
+}
+
+.newsletter p {
+  color: #455454;
+  font-size: 20px;
+}
+
+.newsletter div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  width: 80%;
+  height: 70px;
+  border-radius: 80px;
+  border: 1px solid #494949;
+}
+
+.newsletter input {
+  width: calc(100% - 240px);
+  margin-left: 30px;
+  border: none;
+  outline: none;
+  color: #616161;
+  font-family: "Poppins";
+  font-size: 16px;
+}
+
+.newsletter div button {
+  width: 210px;
+  height: 70px;
+  border-radius: 80px;
+  background: black;
+  color: white;
+  cursor: pointer;
+}
+
+.newsletter div button:hover {
+  background: crimson;
+  transition: 0.5s;
+  border: none;
+}
+
+@media (max-width: 1200px) {
+  .newsletter {
+    width: 75%;
+    padding: 80px 100px;
+  }
+
+  .newsletter input {
+    width: calc(100% - 220px);
+  }
+}
+
+@media (max-width: 992px) {
+  .newsletter {
+    width: 80%;
+    padding: 60px 80px;
+    margin: 0 auto;
+  }
+
+  .newsletter input {
+    width: calc(100% - 200px);
+  }
+}
+
+@media (max-width: 768px) {
+  .newsletter {
+    width: 90%;
+    padding: 40px 60px;
+  }
+
+  .newsletter input {
+    width: calc(100% - 190px);
+  }
+}
+
+@media (max-width: 576px) {
+  .newsletter {
+    width: 80%;
+    padding: 20px 30px;
+  }
+
+  .newsletter div {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    gap: 10px;
+    border: none;
+    background: none;
+  }
+
+  .newsletter input {
+    width: 80%;
+    border: 1px solid black;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 30px;
+  }
+
+  .newsletter div button {
+    width: 80%;
+    border-radius: 20px;
+  }
+  .newsletter p{
+    text-align: center;
+  }
+}

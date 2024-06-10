@@ -1,0 +1,95 @@
+/* Basic reset and styling */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.add-product {
+  padding: 20px;
+  max-width: 1200px;
+  /* margin: auto; */
+}
+
+.addproduct-itemfield {
+  margin-bottom: 20px;
+}
+
+.addproduct-itemfield p {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.addproduct-itemfield input,
+.addproduct-itemfield select {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.addproduct-thumbnail-image {
+  width: 100%;
+  max-width: 100px;
+  cursor: pointer;
+  display: block;
+  margin: 10px 0;
+}
+
+.addproduct-price {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.addproduct-price .addproduct-itemfield {
+  flex: 1;
+  min-width: 250px;
+}
+
+.add-product-selector {
+  width: 100%;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .add-product {
+    width: 100%;
+    padding: 10px 20px;
+  }
+
+  .addproduct-price {
+    flex-direction: column;
+  }
+}
+
+/* Additional responsive styling for smaller devices */
+@media (max-width: 480px) {
+  .addproduct-itemfield input,
+  .addproduct-itemfield select {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+}

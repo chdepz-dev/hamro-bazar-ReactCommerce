@@ -1,0 +1,165 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 40px 20px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footer-logo img {
+    width: 60px;
+}
+
+.footer p {
+    color: crimson;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    color: #252525;
+    font-size: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-links li {
+    cursor: pointer;
+}
+
+.footer-social-icons {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.footer-icons-container {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.footer-icons-container img {
+    cursor: pointer;
+}
+
+.footer-copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    margin-bottom: 30px;
+    color: #1a1a1a;
+    font-size: 20px;
+    text-align: center;
+}
+
+.footer-copyright p {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.footer hr {
+    width: 80%;
+    border: none;
+    border-radius: 10px;
+    height: 3px;
+    background: #c7c7c7;
+}
+
+@media (max-width: 992px) {
+    .footer {
+        gap: 40px;
+    }
+
+    .footer-links {
+        gap: 40px;
+        font-size: 18px;
+    }
+
+    .footer-social-icons {
+        gap: 20px;
+    }
+
+    .footer-icons-container {
+        padding: 15px;
+        gap: 8px;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        gap: 30px;
+    }
+
+    .footer-logo img {
+        width: 50px;
+    }
+
+    .footer p {
+        font-size: 18px;
+    }
+
+    .footer-links {
+        gap: 30px;
+        font-size: 16px;
+    }
+
+    .footer-social-icons {
+        gap: 15px;
+    }
+
+    .footer-icons-container {
+        padding: 10px;
+        gap: 5px;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer {
+        gap: 20px;
+        padding: 20px 10px;
+    }
+
+    .footer-logo img {
+        width: 40px;
+    }
+
+    .footer p {
+        font-size: 16px;
+    }
+
+    .footer-links {
+        gap: 20px;
+        font-size: 14px;
+    }
+
+    .footer-social-icons {
+        gap: 10px;
+    }
+
+    .footer-icons-container {
+        padding: 5px;
+        gap: 5px;
+    }
+
+    .footer hr {
+        width: 90%;
+    }
+}
